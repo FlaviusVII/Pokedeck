@@ -1,5 +1,6 @@
 package main;
 
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -8,6 +9,7 @@ import pokedeck.EnergyType;
 import pokedeck.Pokedeck;
 import pokedeck.Pokemon;
 import pokedeck.Card;
+import ui.MainInterface;
 
 class Main {
 
@@ -29,10 +31,12 @@ class Main {
 		
 		Pokemon monBulbi = (Pokemon) menu.getCardByNumber(44);
 		ArrayList<Capacity> capa = monBulbi.getCapacitys();
-		menu.display(monBulbi);
+		//menu.display(monBulbi);
 		//System.out.println(capa.get(0).getCost());
 		//System.out.println(monBulbi.getDescription());
 		//menu.savePokedeck();
+                MainInterface ui = new MainInterface();
+                ui.index();
 	}
 
 }
